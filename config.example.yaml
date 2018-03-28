@@ -14,40 +14,18 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with ForwardsCoverBot.  If not, see <http://www.gnu.org/licenses/>
 
+# _________________________________________________________________________
 
-import setuptools
+# before of running the bot you should create a file named `config.yaml`
+# the file should be the same of this one, but replacing sample variables with true data
 
 
-setuptools.setup(
+# the token of the bot you get from t.me/botfather (type: str)
+bot_token: "token"
 
-    name="velloresaranbot",
-    version="1",
+# the name of the database (type: str)
+db_path: "database/database.db"
 
-    license="AGPL-3.0",
-
-    author="Dario 91DarioDev",
-    author_email="saranstudiovlr@gmail.com",
-
-    install_requires=[
-        "python-telegram-bot",
-        "Pyyaml"
-    ],
-
-    packages=[
-        "velloresaranbot",
-    ],
-
-    entry_points={
-        "console_scripts": [
-            "velloresaranbot = velloresaranbot.__main__:main",
-        ],
-    },
-
-    include_package_data=True,
-    zip_safe=False,
-
-    classifiers=[
-        "Not on PyPI"
-    ],
-
-)
+# a list containing the telegram ids of the admins of the bot (type: ids are int)
+admins: 
+- 1234
